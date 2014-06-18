@@ -22,15 +22,15 @@
   
   var repos = new Gh3.Repositories(user);
 
-  repos.fetch({page:1, per_page:10, direction : "desc"},"next", function (err, res) {
-    if(err) {
-      throw "outch ..."
-    }
-
-    console.log("Repositories", repos);
-  });
-
-  var repo = new Gh3.Repository("jakemac53.github.com", user);
+  repos.fetch(
+    function (res) {
+      console.log("Repositories", res);
+    },
+    function (err) {
+      throw "outch ..." + err;
+    },
+    {});
+  var repo = new Gh3.Repository("jakemac53.github.io", user);
 
   repo.fetch(function (err, res) {
     if(err) { throw "outch ..." }
