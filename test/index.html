@@ -14,13 +14,12 @@
 
 <script type="text/javascript>
 
-  var user = new Gh3.User("jakemac53")
-  var repoTitle = $("h1")
-  var branchTitle = $("h2")
-  var branchContents = $("ul")
+  var user = new Gh3.User("jakemac53");
+  var repoTitle = $("h1");
+  var branchTitle = $("h2");
+  var branchContents = $("ul");
   var rawContent = $("textarea");
   
-  //get some repositories of user
   var repos = new Gh3.Repositories(repoTitle);
 
   repos.fetch({page:1, per_page:10, direction : "desc"},"next", function (err, res) {
@@ -52,7 +51,7 @@
 
         });
 
-        //var myfile = master.getContents()[8];
+        // var myfile = master.getContents()[8];
 
         var myfile = master.getFileByName("index.html");
 
