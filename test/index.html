@@ -20,13 +20,6 @@
   var branchContents = $("ul");
   var rawContent = $("textarea");
   
-  var repos = new Gh3.Repositories(user);
-
-  repos.fetch(
-    {}, null,
-    function (res) {
-      console.log("Repositories", res);
-    });
   var repo = new Gh3.Repository("jakemac53.github.io", user);
 
   repo.fetch(function (err, res) {
