@@ -4863,6 +4863,9 @@ init.mangledNames = {call$0: "call:0:0", call$1: "call:1:0", call$1$growable: "c
     togglePanel$0: [function(receiver) {
       return this.get$jsElement(receiver).callMethod$2("togglePanel", []);
     }, "call$0", "get$togglePanel", 0, 0, 13],
+    closeDrawer$0: function(receiver) {
+      return this.get$jsElement(receiver).callMethod$2("closeDrawer", []);
+    },
     static: {CoreDrawerPanel$created: function(receiver) {
         receiver.toString;
         C.CoreDrawerPanel_methods.Element$created$0(receiver);
@@ -5657,6 +5660,9 @@ init.mangledNames = {call$0: "call:0:0", call$1: "call:1:0", call$1$growable: "c
     togglePanel$0: [function(receiver) {
       return this.get$jsElement(receiver).callMethod$2("togglePanel", []);
     }, "call$0", "get$togglePanel", 0, 0, 13],
+    closeDrawer$0: function(receiver) {
+      return this.get$jsElement(receiver).callMethod$2("closeDrawer", []);
+    },
     static: {CoreScaffold$created: function(receiver) {
         receiver.toString;
         C.CoreScaffold_methods.Element$created$0(receiver);
@@ -13557,6 +13563,9 @@ init.mangledNames = {call$0: "call:0:0", call$1: "call:1:0", call$1$growable: "c
     close$0: function($receiver) {
       return this.noSuchMethod$1(this, H.createInvocationMirror("close", "close$0", 0, [], []));
     },
+    closeDrawer$0: function($receiver) {
+      return this.noSuchMethod$1(this, H.createInvocationMirror("closeDrawer", "closeDrawer$0", 0, [], []));
+    },
     codeUnitAt$1: function($receiver, $0) {
       return this.noSuchMethod$1(this, H.createInvocationMirror("codeUnitAt", "codeUnitAt$1", 0, [$0], []));
     },
@@ -18632,6 +18641,7 @@ init.mangledNames = {call$0: "call:0:0", call$1: "call:1:0", call$1$growable: "c
     },
     selectedChanged$2: [function(receiver, oldValue, newValue) {
       J.refresh$0$x(J.querySelector$1$x(this.get$$$(receiver)._observable_map$_map.$index(0, "pages"), "players-page[name=\"" + H.S(newValue) + "\"]"));
+      J.closeDrawer$0$x(this.get$$$(receiver)._observable_map$_map.$index(0, "scaffold"));
     }, "call$2", "get$selectedChanged", 4, 0, 82, 61, 62],
     get$positions: function(receiver) {
       return $.get$Position_all();
@@ -28253,6 +28263,9 @@ J.clear$0$ax = function(receiver) {
 };
 J.close$0$x = function(receiver) {
   return J.getInterceptor$x(receiver).close$0(receiver);
+};
+J.closeDrawer$0$x = function(receiver) {
+  return J.getInterceptor$x(receiver).closeDrawer$0(receiver);
 };
 J.codeUnitAt$1$s = function(receiver, a0) {
   return J.getInterceptor$s(receiver).codeUnitAt$1(receiver, a0);
