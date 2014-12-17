@@ -296,6 +296,7 @@ html /deep/ [segment], html /deep/ segment {
 -->
 
 
+
 <polymer-element name="measure-create" attributes="tagName">
   <template>
     <style>
@@ -319,15 +320,20 @@ html /deep/ [segment], html /deep/ segment {
   </template>
   
 </polymer-element>
+
+
+<polymer-element name="measure-polymer-ready" extends="measure-create">
+  
+</polymer-element>
 </div>
 
-  <polymer-element name="x-a" noscript="">
+  <polymer-element name="x-a">
   </polymer-element>
-  <h2>Polymer Js element creation, 1000 elements</h2>
-  <measure-create id="create" numtocreate="1000" tagname="x-a">
-  </measure-create>
+  <h2>Polymer Dart element creation, 1000 elements</h2>
+  <measure-polymer-ready id="create" numtocreate="1000" tagname="x-a">
+  </measure-polymer-ready>
 
   
 
 
-<script src="create_polymer_js.html_bootstrap.dart.js" async=""></script></body></html>
+<script src="create_polymer_dart_no_ready.html_bootstrap.dart.js" async=""></script></body></html>

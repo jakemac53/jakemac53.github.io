@@ -345,11 +345,13 @@ html /deep/ [segment], html /deep/ segment {
   
 </polymer-element>
 </div>
+  <button id="runAll" disabled="">Run all tests</button>
   <perf-test-runner testtitle="Load times" testurl="load.html"></perf-test-runner>
   <perf-test-runner testtitle="Div element creation" testurl="create_div.html"></perf-test-runner>
   <perf-test-runner testtitle="Custom Dart element creation" testurl="create_custom_dart_element.html"></perf-test-runner>
   <perf-test-runner testtitle="Custom Js element creation" testurl="create_custom_js_element.html"></perf-test-runner>
   <perf-test-runner testtitle="Polymer Dart element creation" testurl="create_polymer_dart.html"></perf-test-runner>
+  <perf-test-runner testtitle="Polymer Dart element creation separating out PolymerReady" testurl="create_polymer_dart_no_ready.html"></perf-test-runner>
   <perf-test-runner testtitle="Polymer Js element creation" testurl="create_polymer_js.html"></perf-test-runner>
   
 
