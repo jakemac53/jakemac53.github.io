@@ -39,8 +39,8 @@ class NoctermTerminalHost {
       cursorBlink: true,
       fontFamily: '"Cascadia Code", "Fira Code", "JetBrains Mono", "Source Code Pro", "DejaVu Sans Mono", Monaco, Menlo, monospace',
       fontSize: 10,
-      cols: 160,  // Wider for bento layout (ASCII title is 66 chars + sidebar)
-      rows: 45,   // Taller for bento layout
+      cols: 134,  // Wider for bento layout (ASCII title is 66 chars + sidebar)
+      rows: 50,   // Taller for bento layout
       theme: {
         background: '#1e1e1e',
         foreground: '#d4d4d4',
