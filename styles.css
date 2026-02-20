@@ -1,0 +1,271 @@
+:root {
+    --bg-color: #0f172a;
+    /* Sleek dark mode background */
+    --text-color: #f8fafc;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    /* Glassmorphism card bg */
+    --card-border: rgba(255, 255, 255, 0.1);
+    --accent-glow: rgba(56, 189, 248, 0.4);
+    --accent-color: #38bdf8;
+    --secondary-glow: rgba(139, 92, 246, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Ambient background glowing orbs */
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+    animation: float 25s infinite alternate ease-in-out;
+    pointer-events: none;
+}
+
+body::before {
+    top: -15vw;
+    left: -15vw;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+}
+
+body::after {
+    bottom: -15vw;
+    right: -10vw;
+    background: radial-gradient(circle, var(--secondary-glow) 0%, transparent 60%);
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(6vw, 6vw) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-3vw, -4vw) scale(0.9);
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fade-in-down 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    /* Support fallback for non-webkit */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+p.subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #94a3b8;
+    font-weight: 300;
+}
+
+main.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 2rem;
+    animation: fade-in-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+/* Responsive grid of projects */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Premium interactive card styling */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    /* Glassmorphism blur */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+
+/* Scanning light effect on hover */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+.card:hover::before {
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+}
+
+.card-icon {
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(56, 189, 248, 0.1);
+    border-radius: 12px;
+    color: var(--accent-color);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.1) rotate(-5deg);
+    background: rgba(56, 189, 248, 0.2);
+}
+
+.card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.card h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.card h2 a:hover {
+    color: var(--accent-color);
+}
+
+.card p {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.card p a {
+    color: var(--accent-color);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.card p a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.card p a:hover {
+    color: #fff;
+}
+
+.card p a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.card-footer {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.card-footer svg {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-footer svg {
+    transform: translateX(6px);
+}
+
+/* Load-in animations */
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
