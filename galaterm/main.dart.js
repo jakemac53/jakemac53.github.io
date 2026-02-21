@@ -7649,7 +7649,7 @@ p=q==null?null:q.p(0,B.c.t(l.b)+s)
 if(p!=null)for(q=J.hH(p),o=q.length,n=0;n<q.length;q.length===o||(0,A.t)(q),++n){m=q[n]
 if(m.ga4()&&m.c>0)m.af(5)}}}}}
 A.is.prototype={
-$1(a){var s,r=B.c.t(this.a-a),q=B.c.t(this.b)-r,p="\\"+B.e.W(" ",r*2)+"/"
+$1(a){var s,r=B.c.t(this.a-a),q=B.c.t(this.b)-r,p="\\"+B.e.W("\\/",r)+"/"
 if(q<0){s=-q
 if(s>=p.length)return""
 return B.e.br(p,s)}return B.e.W(" ",q)+p},
