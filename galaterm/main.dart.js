@@ -2737,23 +2737,22 @@ _.f=h
 _.r=i
 _.w=j
 _.x=k},
-fh:function fh(a,b,c,d,e,f,g,h,i,j,k,l,m,n){var _=this
+fh:function fh(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.dy=null
-_.fr=a
 _.fx=0
-_.y=b
-_.z=c
-_.Q=d
-_.as=e
-_.a=f
-_.b=g
-_.c=h
-_.d=i
-_.e=j
-_.f=k
-_.r=l
-_.w=m
-_.x=n},
+_.y=a
+_.z=b
+_.Q=c
+_.as=d
+_.a=e
+_.b=f
+_.c=g
+_.d=h
+_.e=i
+_.f=j
+_.r=k
+_.w=l
+_.x=m},
 hj:function hj(a,b,c,d,e,f,g,h,i){var _=this
 _.y=6
 _.a=a
@@ -7568,32 +7567,31 @@ P(a){var s=this
 s.a=s.a+s.y
 s.b=s.b+s.z}}
 A.fh.prototype={
-P(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=++g.fx
-if(f%3===0){s=g.r
+P(a){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=++h.fx
+if(g%3===0){s=h.r
 s=s!=null&&s.length>=2}else s=!1
-if(s){s=g.r
+if(s){s=h.r
 s.toString
-B.a.q(s,1,[B.Q,B.R,B.y][B.d.aq(B.d.C(f,3),3)])}f=g.dy
+B.a.q(s,1,[B.Q,B.R,B.y][B.d.aq(B.d.C(g,3),3)])}g=h.dy
 r=!1
-if(f!=null&&f.c>0)for(f=A.c2(a.r,t.v),s=f.length,q=0;q<s;++q)if(B.a.B(f[q].ga1(),g.dy)){r=!0
-break}if(!r){g.dy=null
-for(f=A.c2(a.r,t.v),s=f.length,p=1/0,q=0;q<s;++q)for(o=f[q].ga1(),n=o.length,m=0;m<o.length;o.length===n||(0,A.t)(o),++m){l=o[m]
-if(l.ga4()&&!(l instanceof A.b4)&&l.c>0){k=Math.sqrt(Math.pow(l.a-g.a,2)+Math.pow(l.b-g.b,2))
-if(k<p){g.dy=l
-p=k}}}}f=g.dy
-if(f!=null){j=f.a+f.gF()/2-g.a
-f=g.dy
-i=f.b+f.ga5().length/2-g.b
+if(g!=null&&g.c>0)for(g=A.c2(a.r,t.v),s=g.length,q=0;q<s;++q)if(B.a.B(g[q].ga1(),h.dy)){r=!0
+break}if(!r){h.dy=null
+for(g=A.c2(a.r,t.v),s=g.length,p=1/0,q=0;q<s;++q)for(o=g[q].ga1(),n=o.length,m=0;m<o.length;o.length===n||(0,A.t)(o),++m){l=o[m]
+if(l.ga4()&&!(l instanceof A.b4)&&l.c>0){k=Math.sqrt(Math.pow(l.a-h.a,2)+Math.pow(l.b-h.b,2))
+if(k<p){h.dy=l
+p=k}}}}g=h.dy
+if(g!=null){j=g.a+g.gF()/2-h.a
+g=h.dy
+i=g.b+g.ga5().length/2-h.b
 k=Math.sqrt(Math.pow(j,2)+Math.pow(i,2))
-f=g.a
-if(k>0){h=(20+g.fr*4)/60
-f+=j/k*h
-g.a=f
-s=g.b+=i/k*h}else{f+=g.z
-g.a=f
-s=g.b+g.Q
-g.b=s}}else{f=g.a=g.a+g.z
-s=g.b=g.b+g.Q}if(f<0||f>=a.a||s<0||s>=a.b)B.a.i(a.x,g)},
+g=h.a
+if(k>0){g+=j/k*0.3333333333333333
+h.a=g
+s=h.b+=i/k*0.3333333333333333}else{g+=h.z
+h.a=g
+s=h.b+h.Q
+h.b=s}}else{g=h.a=h.a+h.z
+s=h.b=h.b+h.Q}if(g<0||g>=a.a||s<0||s>=a.b)B.a.i(a.x,h)},
 a7(a2,a3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0=this,a1=null
 t.c.a(a3)
 if(a0.c<=0)return
@@ -7691,7 +7689,7 @@ n=j.b
 m=j.db
 l=A.d(["^","Y"],t.s)
 k=A.d([B.bB,B.Q,B.R,B.y],t.O)
-B.a.i(a.w,new A.fh(m,!1,0,(-20-m*4)/60,15+m*5,i+o,n,1,1,l,B.a3,k,null,40))
+B.a.i(a.w,new A.fh(!1,0,-0.3333333333333333,15+m*5,i+o,n,1,1,l,B.a3,k,null,40))
 j.dy=60}i=j.dx
 if(i>0&&j.fr<=0){B.a.i(a.w,A.ol(2+i*2,j.a-1,j.b))
 j.fr=300}if(j.Q===0){B.a.i(a.w,A.iB(null,10+j.cx*5,0,-0.16666666666666666,!1,null,j.a+1,j.b-1))
