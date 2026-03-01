@@ -7,10 +7,13 @@ void main() async {
 
   await for (HttpRequest request in server) {
     var path = request.uri.path;
-    if (path == '/') path = '/index.html';
+    if (path.endsWith('/')) path += 'index.html';
+    if (path.isEmpty) path = '/index.html';
     
     // Security: Only allow files within the current directory
-    final file = File('.$path');
+    // Remove leading slash for File constructor
+    final filePath = path.startsWith('/') ? path.substring(1) : path;
+    final file = File(filePath);
     
     if (await file.exists()) {
       try {
@@ -23,7 +26,7 @@ void main() async {
       }
     } else {
       request.response.statusCode = HttpStatus.notFound;
-      request.response.write('Not Found');
+      request.response.write('Not Found: $path');
       await request.response.close();
     }
   }
