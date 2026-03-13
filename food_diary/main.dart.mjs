@@ -898,6 +898,7 @@ class CompiledApp {
       _2125: x0 => x0.length,
       _2126: x0 => x0.message,
       _2127: x0 => x0.name,
+      _2141: (x0,x1) => x0.getAllKeys(x1),
       _2161: (x0,x1) => x0.get(x1),
       _2164: (x0,x1,x2) => x0.put(x1,x2),
       _2174: (module,f) => finalizeWrapper(f, function(x0) { return module.exports._2174(f,arguments.length,x0) }),
