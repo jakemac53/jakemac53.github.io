@@ -1,11 +1,11 @@
 {
-    "name": "food_analyzer",
-    "short_name": "food_analyzer",
+    "name": "Food Analyzer",
+    "short_name": "Food AI",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0f172a",
+    "theme_color": "#0f172a",
+    "description": "AI-powered food and nutrition analysis.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
