@@ -114011,7 +114011,7 @@ $3$isCalories(a,b,c){return this.$4$isCalories$isLimit(a,b,c,!1)},
 $3$isLimit(a,b,c){return this.$4$isCalories$isLimit(a,b,!1,c)},
 $S:260}
 A.a6k.prototype={
-F(a){var s=this,r=null,q=s.e,p=s.d,o=B.d.dO(q-p,0,q),n=B.d.dO(p/q,0,1),m=B.d.fa(n*100),l=s.w,k=A.d0(A.af(s.c,r,r,r,A.dv(r,r,l,r,r,r,r,r,r,r,r,11,r,r,B.iS,r,r,!0,r,0.5,r,r,r,r,r,r),r,r,r),r,70),j=B.d.aj(o,0),i=s.x?"to go":"left",h=t.p
+F(a){var s=this,r=null,q=s.e,p=s.d,o=B.d.dO(q-p,0,q),n=B.d.dO(p/q,0,1),m=B.d.fa(n*100),l=s.w,k=A.d0(A.af(s.c,r,r,r,A.dv(r,r,l,r,r,r,r,r,r,r,r,11,r,r,B.iS,r,r,!0,r,0.5,r,r,r,r,r,r),r,r,r),r,70),j=B.d.aj(o,0),i=s.x?"left":"to go",h=t.p
 return new A.ay(B.L3,A.bx(A.b([A.cn(A.b([k,B.nJ,A.eN(A.cn(A.b([A.af(j+" "+i,r,r,r,A.dv(r,r,l.cT(0.7),r,r,r,r,r,r,r,r,10,r,r,B.ag,r,r,!0,r,r,r,r,r,r,r,r),r,r,r),B.Dg,A.af(B.d.aj(p,0)+"/"+B.d.aj(q,0)+s.f,r,r,r,A.dv(r,r,l.cT(0.8),r,r,r,r,r,r,r,r,10,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),r,r,r)],h),B.u,B.l,B.o,0),1),B.eb,A.af(""+m+"%",r,r,r,A.dv(r,r,l,r,r,r,r,r,r,r,r,11,r,r,B.iS,r,r,!0,r,r,r,r,r,r,r,r),r,r,r)],h),B.ey,B.l,B.o,0),A.tD(A.cd(1),new A.HD(2,n,B.fG,r,new A.nb(s.r,t.ZU),r,r,r),B.b5)],h),B.a3,B.l,B.o),r)}}
 A.vz.prototype={
 F(a){var s=this,r=null,q=s.c
