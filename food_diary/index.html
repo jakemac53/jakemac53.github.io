@@ -23,13 +23,13 @@
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="food_analyzer">
+  <meta name="apple-mobile-web-app-title" content="nori">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>food_analyzer</title>
+  <title>Nori</title>
   <link rel="manifest" href="manifest.json">
   <style>
     body {
@@ -38,7 +38,7 @@
       margin: 0;
       padding: 0;
       position: fixed;
-      background-color: #0f172a;
+      background-color: #14532d;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,14 +58,18 @@
       height: 120px;
       margin-bottom: 30px;
     }
-    .logo-container img {
+    .restaurant-icon-container {
       width: 100%;
       height: 100%;
       z-index: 2;
       position: relative;
       animation: pulse 2.5s infinite ease-in-out;
-      border-radius: 24px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(74, 222, 128, 0.3);
+      background: radial-gradient(circle, #66bb6a 0%, #388e3c 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .logo-glow {
       position: absolute;
@@ -74,7 +78,7 @@
       transform: translate(-50%, -50%);
       width: 140%;
       height: 140%;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(56, 189, 248, 0) 70%);
+      background: radial-gradient(circle, rgba(74, 222, 128, 0.2) 0%, rgba(74, 222, 128, 0) 70%);
       z-index: 1;
       animation: glowPulse 2.5s infinite ease-in-out;
     }
@@ -98,8 +102,8 @@
     .progress-bar-value {
       width: 30%;
       height: 100%;
-      background: #38bdf8;
-      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+      background: #4ade80;
+      box-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
       animation: progressIndeterminate 2s infinite ease-in-out;
     }
     @keyframes pulse {
@@ -126,7 +130,9 @@
   <div id="loading">
     <div class="logo-container">
       <div class="logo-glow"></div>
-      <img src="icons/Icon-192.png" alt="Food Analyzer Logo">
+      <div class="restaurant-icon-container">
+        <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 0 24 24" width="60px" fill="#FFFFFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+      </div>
     </div>
     <div class="loading-text">Simmering your insights...</div>
     <div class="progress-bar-container">
