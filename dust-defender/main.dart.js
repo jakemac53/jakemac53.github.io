@@ -1372,11 +1372,11 @@ a25(a){var s=!1
 if($.ak().gb2()===B.I||$.ak().gb2()===B.a7)if(a!=null)s=a===".SF Pro Text"||a===".SF Pro Display"||a===".SF UI Text"||a===".SF UI Display"
 return s},
 a1V(){if(A.a2J())return B.ie
-if($.ak().gb2()===B.I||$.ak().gb2()===B.a7)return B.x1
+if($.ak().gb2()===B.I||$.ak().gb2()===B.a7)return B.x2
 throw A.e(A.at("Should only be called on Mac or iOS."))},
 abq(){if(A.a2J())return B.ie
 if($.ak().gb2()===B.I||$.ak().gb2()===B.a7)return A.a1V()
-return B.x_},
+return B.x0},
 a2u(a,b){var s,r,q,p,o=new A.bA("")
 A.abs(a,o)
 if(!A.a27(a)&&!A.a25(a)){for(s=A.abq(),r=s.length,q=0;q<r;++q){a=s[q]
@@ -6995,7 +6995,7 @@ this.b=b},
 a_1(a){if(a>100)throw A.e(A.ax(a,"sellRefundPercent","must be between 0 and 100"))
 return a},
 a5h(a){var s,r,q=t.S,p=A.q(t.hZ,q)
-for(s=0;s<5;++s)p.q(0,B.xF[s],0)
+for(s=0;s<5;++s)p.q(0,B.xG[s],0)
 r=A.iM(100,"config.startingCoins")
 A.iM(20,"config.waveBonus")
 A.a_1(70)
@@ -7017,7 +7017,7 @@ WT(a,b,c,d,e){var s,r,q,p=A.b([],t.EP),o=A.b([],t.iq),n=t.S,m=A.b([],t.uH),l=c==
 if(e==null){l=l?null:c.a
 l=A.a0A(l==null?"living_room":l)}else l=e
 s=A.eu(l,t.mP)
-r=new A.Rb(s,B.bK,B.im,A.a6(n))
+r=new A.Rb(s,B.bK,B.il,A.a6(n))
 q=A.a9n(s)
 if(q.length!==0)A.Y(A.ax(l,"definitions",B.b.ak(q,"; ")))
 if(s.length===0)r.b=B.dR
@@ -7360,7 +7360,7 @@ for(c=0;B.b.c0(a8,new A.R7(c));++c)for(s=a8.length,p=0;p<a8.length;a8.length===s
 if(c>=b.length)continue
 a=b[c]
 r=j.length===0?0:d
-j.push(new A.fg(a.a,a.b,a.c,r))}s=B.e.b_(b0,10)===0?B.ii[B.e.cw(b0,10)-1]:B.xN
+j.push(new A.fg(a.a,a.b,a.c,r))}s=B.e.b_(b0,10)===0?B.io[B.e.cw(b0,10)-1]:B.xO
 s=A.j6(s,0,t.iR)
 r=J.ay(s.a)
 s=s.b
@@ -15274,7 +15274,7 @@ if(!isFinite(a))return!1
 s=a*40
 return Math.abs(s-B.d.f_(s))<1e-9},
 a0A(a){var s=$.a3v().i(0,a)
-return s==null?B.xM:s},
+return s==null?B.xN:s},
 a8U(a,b,c){var s,r="must be finite"
 if(!isFinite(a))throw A.e(A.ax(a,"strength",r))
 if(!isFinite(b))throw A.e(A.ax(b,"factor",r))
@@ -16321,7 +16321,7 @@ ma(){var s=this.as
 s===$&&A.d()
 return s},
 mb(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.xT
+if(a<0||b<0)return B.xU
 s=this.a
 s===$&&A.d()
 s=s.a
@@ -17071,7 +17071,7 @@ p.toString
 p=p>0}else p=!1
 if(p)return q}o=this.Of(a,b)
 if(o.length===1)return B.b.gN(o)
-for(r=0;r<7;++r){q=A.a_9(o,new A.HK(B.x8[r]))
+for(r=0;r<7;++r){q=A.a_9(o,new A.HK(B.x9[r]))
 if(q!=null)return q}return B.b.gN(o)},
 OG(a){var s,r,q
 if(B.dj.O(a)){s=B.dj.i(0,a)
@@ -18202,7 +18202,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.af.d3(a2)).i(0,"data"))
 c=A.bU(d.i(0,"message"))
 if(c!=null&&c.length!==0){b=A.X1(d,"assertiveness")
-e.a.DQ(c,B.x0[b==null?0:b])}}a.cf(a3,B.af.ao(!0))
+e.a.DQ(c,B.x1[b==null?0:b])}}a.cf(a3,B.af.ao(!0))
 return
 case"flutter/navigation":q=a.gbb().b
 p=t.j8
@@ -21137,7 +21137,7 @@ if(m.f!==B.i8){m.f=B.i8
 m.Bw()}}return m.d.a.J4(a)},
 Bw(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-J3(a){if(B.b.t(B.xJ,a))return this.f===B.cT
+J3(a){if(B.b.t(B.xK,a))return this.f===B.cT
 return!1}}
 A.Hy.prototype={
 $0(){return new A.hs(Date.now(),0,!1)},
@@ -22713,7 +22713,7 @@ o=A.eh(s.i(0,"textAlignIndex"))
 n=A.eh(s.i(0,"textDirectionIndex"))
 m=A.mZ(s.i(0,"fontWeightIndex"))
 l=m!=null?A.a2D(m):"normal"
-p=new A.Qo(new A.GV(A.Jp(s,"fontSize"),l,A.bU(s.i(0,"fontFamily")),B.wS[o],B.f1[n],A.Jp(s,"letterSpacing"),A.Jp(s,"wordSpacing"),A.Jp(s,"lineHeight")))
+p=new A.Qo(new A.GV(A.Jp(s,"fontSize"),l,A.bU(s.i(0,"fontFamily")),B.wU[o],B.f1[n],A.Jp(s,"letterSpacing"),A.Jp(s,"wordSpacing"),A.Jp(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.u2
 break
@@ -27411,7 +27411,7 @@ if(o>0)return s
 return null}}
 A.Rz.prototype={
 u(a,b){this.zM(b,0,b.length,!1)},
-aJ(){this.zM(B.ij,0,0,!0)}}
+aJ(){this.zM(B.ii,0,0,!0)}}
 A.UC.prototype={
 zM(a,b,c,d){var s=this.b.Xh(a,b,c,d)
 if(s!=null)this.a.jc(s,0,s.length,d)}}
@@ -29209,7 +29209,7 @@ return"ApplianceAttack("+q.a.a+", target: "+A.h(p)+", inReach: "+A.h(s)+", fired
 A.FC.prototype={
 u(a,b){var s,r=this.a,q=b.a,p=r.i(0,q)
 if(p!=null)return p
-s=new A.kx(b,B.il)
+s=new A.kx(b,B.ik)
 r.q(0,q,s)
 this.b.push(s)
 return s},
@@ -29232,7 +29232,7 @@ n=o.a
 switch(n.b.as.a){case 0:o.b=A.a5j(n,c,d,n.f)
 break
 case 1:m=A.a5k(n,c,d)
-o.c=m.length===0?B.il:new A.fj(m,r)
+o.c=m.length===0?B.ik:new A.fj(m,r)
 break
 case 2:break}}A:for(s=e==null,q=0;q<f.length;f.length===p||(0,A.m)(f),++q){o=f[q]
 n=o.a
@@ -30027,7 +30027,7 @@ d=g.z
 if(!(d>=1&&isFinite(d)))e.push("bossHealth must be at least 1, got "+A.h(d))
 if(!isFinite(0.015))e.push("bossHealthPerWave must not be negative")
 if(!isFinite(0.01))e.push("spacingPerWave must not be negative")
-for(d=A.j6(B.ii,0,t.hF),c=J.ay(d.a),d=d.b,q=new A.dY(c,d);q.l();){p=q.c
+for(d=A.j6(B.io,0,t.hF),c=J.ay(d.a),d=d.b,q=new A.dY(c,d);q.l();){p=q.c
 p=p>=0?new A.a_(d+p,c.gA()):A.Y(A.br())
 o=p.a
 n=p.b
@@ -30084,7 +30084,7 @@ s.push(p)
 q.u(0,p.b);++l.f}if(p===n)l.b=B.aW}++l.r
 if(l.b===B.aW&&l.w.a===0){s=l.c
 s.toString;++l.d
-l.e=B.im
+l.e=B.il
 l.f=0
 l.b=s+1<l.a.length?B.bK:B.dR
 r=a.c
@@ -30169,7 +30169,7 @@ a.cA(b.W(0,B.AH),b.W(0,B.AW),A.nq(B.hN,0.05))
 $.L()
 s=A.C()
 s.r=B.hE.C()
-for(r=b.a,q=b.b,p=a.a,o=0;o<4;++o){n=B.x2[o]
+for(r=b.a,q=b.b,p=a.a,o=0;o<4;++o){n=B.x3[o]
 m=s.af()
 p.drawCircle(r+n.a,q+n.b,0.09,m)
 m.delete()}}}
@@ -30676,7 +30676,7 @@ o=new A.bc(o,new Float32Array(2))
 o.aH(p)
 o.B()
 p=A.V(A.aD(l),l,!1,t.n)
-n=new A.yW(new A.GQ(m),s,r,B.xR,B.dw,q,o,B.u,20,new A.ai(p,0,0,t.d),l,new A.Q([]),new A.Q([]))
+n=new A.yW(new A.GQ(m),s,r,B.xS,B.dw,q,o,B.u,20,new A.ai(p,0,0,t.d),l,new A.Q([]),new A.Q([]))
 n.be(l,l,l,l,0,l,20,l,l)
 r.an(s)
 n.an(r)
@@ -31886,7 +31886,7 @@ B.b.D(r,A.b([B.fN,A.XJ(B.dS,q,12,12)],s))
 B.b.D(r,m.QT())
 return A.ly(B.X,A.Wu(A.Wr(A.Xo(A.kT(A.iN(r,B.aj,l,B.bq),B.to,k,l,B.ei,B.ej,l))),B.eb,!0),l,l,l)},
 QT(){var s,r,q,p,o=null,n=this.a.r,m=A.a6F(n)
-if(m.length===0)return B.xL
+if(m.length===0)return B.xM
 s=t.p
 r=A.b([A.eE(o,B.ED,!1,o,o,!1,o,o,!0,o,o,o,o,o,o,o,o,o,o,o,o)],s)
 for(q=m.length,p=0;p<m.length;m.length===q||(0,A.m)(m),++p)r.push(A.d4(m[p],o,B.co,o))
@@ -31931,7 +31931,7 @@ B.b.D(r,A.a2Y(A.b([new A.dc("Play",this.c,B.a4,!0,B.Gd),new A.dc("Settings",this
 return A.Kd(r,360,!0,B.Ad,"Dust Defender",B.Et)}}
 A.kV.prototype={
 ai(a){var s,r=this.c,q=A.ap([B.dJ,r],t.me,t.M),p=t.p,o=A.b([],p)
-for(s=0;s<3;++s)B.b.D(o,A.b([A.d4(B.wT[s],null,B.dP,B.J),B.E_],p))
+for(s=0;s<3;++s)B.b.D(o,A.b([A.d4(B.wV[s],null,B.dP,B.J),B.E_],p))
 o.push(B.ck)
 o.push(new A.dc("Back",r,B.V,!0,B.G5))
 return A.Kd(o,360,!1,q,"Credits",B.dO)}}
@@ -32109,7 +32109,7 @@ r.drawOval(A.b9(o),n)
 n.delete()
 n=q.af()
 r.drawOval(A.b9(o),n)
-n.delete()}for(s=i.b,p=0;p<3;++p){q=B.x7[p]
+n.delete()}for(s=i.b,p=0;p<3;++p){q=B.x8[p]
 m=q.a
 l=m.a-0.04
 k=m.b
@@ -32830,7 +32830,7 @@ $S:3}
 A.Q6.prototype={
 $0(){var s=this.a,r=this.b
 if(s.c!==r)return
-s.a.IY(r,B.wW[(r.f.a+1)%4])},
+s.a.IY(r,B.wY[(r.f.a+1)%4])},
 $S:0}
 A.wN.prototype={
 gGR(){var s,r,q=this,p=null,o=q.p2
@@ -33282,7 +33282,7 @@ if(p!==q.to||n!=q.ry){q.to=p
 q.ry=n
 o=p.b
 s=o===B.aV||o===B.aW?p.c:p.gpb()
-q.UV(s==null?B.xS:p.a[s].gVX())}if(n==null)r=""
+q.UV(s==null?B.xT:p.a[s].gVX())}if(n==null)r=""
 else{o=p.b
 r=o===B.aV||o===B.aW?"Now:":"Next:"}o=q.p2
 if(o.p1!==r)o.sbN(r)
@@ -34006,7 +34006,7 @@ n=k}j.c=m
 B.b.H(j.f)},
 j(a){var s,r=this,q=r.f,p=r.d
 r.d=-1
-r.f=B.ij
+r.f=B.ii
 s=r.JX(0)
 r.d=p
 r.f=q
@@ -37281,7 +37281,7 @@ Id(a){var s=this.b,r=s.a.c.xp(a.aa(0,s.gdA()))
 if(r==null||s.gdA().k(0,B.i))return r
 return new A.hz(r.a.hK(s.gdA()),r.b,r.c)},
 nY(){var s,r,q=this.b,p=q.gdA()
-if(!isFinite(p.a)||!isFinite(p.b))return B.xU
+if(!isFinite(p.a)||!isFinite(p.b))return B.xV
 s=q.f
 if(s==null){s=q.a.c.nY()
 q.f=s}if(p.k(0,B.i))r=s
@@ -37818,8 +37818,8 @@ s=r.ap
 r.dt=s==null?null:s.gxJ()
 a.a=!1},
 je(a,b,c){var s,r,q,p,o=this
-o.bK=A.a0v(o.bK,B.ik)
-o.eP=A.a0v(o.eP,B.ik)
+o.bK=A.a0v(o.bK,B.ij)
+o.eP=A.a0v(o.eP,B.ij)
 s=o.bK
 r=s!=null&&!s.gJ(s)
 s=o.eP
@@ -42719,7 +42719,7 @@ break
 case 1:return A.E(q,r)}})
 return A.F($async$rO,r)},
 Oq(a,b){var s,r,q,p
-if(a===b)return B.xP
+if(a===b)return B.xQ
 s=A.b([],t.sP)
 if(a==null)s.push(b)
 else{r=B.b.fv(B.c1,a)
@@ -43349,7 +43349,7 @@ A.dx.prototype={
 G(){return"ModifierKey."+this.b}}
 A.pB.prototype={
 ga_m(){var s,r,q=A.q(t.yx,t.FE)
-for(s=0;s<9;++s){r=B.io[s]
+for(s=0;s<9;++s){r=B.im[s]
 if(this.ZF(r))q.q(0,r,B.bi)}return q}}
 A.h0.prototype={}
 A.Mb.prototype={
@@ -43387,7 +43387,7 @@ i=$.bK
 if(i!=null)i.$1(new A.ar(r,q,"services library",j,p,!1))}}return!1},
 TN(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=a1.c,f=g.ga_m(),e=t.F3,d=A.q(e,t.q),c=A.a6(e),b=this.d,a=A.cD(new A.as(b,A.p(b).h("as<1>")),e),a0=a1 instanceof A.hS
 if(a0)a.u(0,g.gen())
-for(s=g.a,r=null,q=0;q<9;++q){p=B.io[q]
+for(s=g.a,r=null,q=0;q<9;++q){p=B.im[q]
 o=$.a3p()
 n=o.i(0,new A.bE(p,B.am))
 if(n==null)continue
@@ -46556,7 +46556,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.wk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.o5(a1),B.xQ,e===!0,d,c,b,a3,A.a6V(a2))
+a=new A.wk(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.o5(a1),B.xR,e===!0,d,c,b,a3,A.a6V(a2))
 if(!a.k(0,a0.e))a0.bE(new A.T0(a0,a))},
 EO(){if(this.d==null)this.j9()},
 EP(){this.j9()},
@@ -49468,7 +49468,7 @@ r.ns()
 return s.b5()},
 m(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.grP(),p=0;p<s.length;s.length===r||(0,A.m)(s),++p)s[p].aY(q)
-o.b=B.xO
+o.b=B.xP
 o.y=!1
 o.fV()},
 bI(a,b){return a.ha(b)},
@@ -52460,7 +52460,7 @@ B.B=new A.QT()
 B.b6=new A.QV()
 B.aI=new A.yO()
 B.bJ=new A.yT(0,0,0,0)
-B.xQ=s([],A.a2("o<adJ>"))
+B.xR=s([],A.a2("o<adJ>"))
 B.Hq=new A.QZ()
 B.cF=new A.RC()
 B.hw=new A.zm()
@@ -52736,22 +52736,22 @@ B.J=new A.h9(2,"center")
 B.cm=new A.h9(3,"justify")
 B.a9=new A.h9(4,"start")
 B.dL=new A.h9(5,"end")
-B.wS=s([B.ao,B.bF,B.J,B.cm,B.a9,B.dL],A.a2("o<h9>"))
-B.wT=s(["Dust Defender","Made by Jake MacDonald","Built with Flutter and Flame"],t.s)
+B.wU=s([B.ao,B.bF,B.J,B.cm,B.a9,B.dL],A.a2("o<h9>"))
+B.wV=s(["Dust Defender","Made by Jake MacDonald","Built with Flutter and Flame"],t.s)
 B.ru=new A.jR(0,"first")
 B.Eg=new A.jR(1,"last")
 B.Eh=new A.jR(2,"strongest")
 B.rv=new A.jR(3,"closest")
-B.wW=s([B.ru,B.Eg,B.Eh,B.rv],A.a2("o<jR>"))
-B.x_=s(["Arial"],t.s)
-B.x0=s([B.e0,B.e1],A.a2("o<nt>"))
-B.x1=s(["-apple-system","BlinkMacSystemFont"],t.s)
+B.wY=s([B.ru,B.Eg,B.Eh,B.rv],A.a2("o<jR>"))
+B.x0=s(["Arial"],t.s)
+B.x1=s([B.e0,B.e1],A.a2("o<nt>"))
+B.x2=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.ie=s(["BlinkMacSystemFont"],t.s)
 B.AV=new A.k(0.04,-0.08)
 B.AT=new A.k(-0.06,-0.14)
 B.AZ=new A.k(0.14,-0.14)
 B.AL=new A.k(0.04,-0.22)
-B.x2=s([B.AV,B.AT,B.AZ,B.AL],t.kQ)
+B.x3=s([B.AV,B.AT,B.AZ,B.AL],t.kQ)
 B.CS=new A.t(0.05,0.55,0.65,0.9500000000000001)
 B.Ck=new A.a_(B.CS,B.hP)
 B.CP=new A.t(0.55,0.5,1.13,0.95)
@@ -52778,8 +52778,8 @@ B.B0=new A.k(0.6,0.75)
 B.Cl=new A.a_(B.B0,0.18)
 B.AX=new A.k(0.9,0.68)
 B.Co=new A.a_(B.AX,0.2)
-B.x7=s([B.Cm,B.Cl,B.Co],A.a2("o<+(k,K)>"))
-B.x8=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.x8=s([B.Cm,B.Cl,B.Co],A.a2("o<+(k,K)>"))
+B.x9=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
 B.yj=new A.lz("en",null,"US")
 B.xg=s([B.yj],t.as)
 B.be=new A.eV(0,"suction")
@@ -52800,45 +52800,6 @@ B.xr=s([B.E,B.h],A.a2("o<qo>"))
 B.W=new A.jS(0,"rtl")
 B.k=new A.jS(1,"ltr")
 B.f1=s([B.W,B.k],A.a2("o<jS>"))
-B.A5=new A.bL([B.be,0.125,B.aM,0,B.bf,0.125,B.ak,1.5,B.ay,0.75],t.e)
-B.Ah=new A.bL([B.ak,0.5],t.e)
-B.c0=s([],t.x_)
-B.nm=new A.cK("socks","Socks",6,2,3,2,B.Ah,0,1,B.c0,!1)
-B.E1=new A.i1(B.nm,6)
-B.x9=s([B.E1],t.x_)
-B.dm=new A.cK("laundry_mountain","Laundry Mountain",250,0.5,50,20,B.A5,0,2,B.x9,!0)
-B.hg=new A.cV(B.dm,1)
-B.yh=s([B.hg],t.U)
-B.cy=new A.cV(B.dm,2)
-B.x4=s([B.cy],t.U)
-B.hf=new A.cV(B.dm,3)
-B.xf=s([B.hf],t.U)
-B.th=new A.cV(B.dm,4)
-B.wM=s([B.th],t.U)
-B.A6=new A.bL([B.bf,1.5,B.be,0.5,B.aM,0.25,B.ak,0,B.ay,0],t.e)
-B.A9=new A.bL([B.be,0.5,B.bf,2,B.ak,0.5,B.ay,0.5],t.e)
-B.dk=new A.cK("wet_spill","Wet Spill",20,0.75,12,3,B.A9,0,1.5,B.c0,!1)
-B.E2=new A.i1(B.dk,4)
-B.xs=s([B.E2],t.x_)
-B.nl=new A.cK("mud_monster","Mud Monster",400,0.5,60,20,B.A6,0,2,B.xs,!0)
-B.cz=new A.cV(B.nl,2)
-B.wR=s([B.hg,B.cz],t.U)
-B.A7=new A.bL([B.be,1.5,B.ay,2,B.ak,0.25,B.bf,0,B.aM,0],t.e)
-B.A8=new A.bL([B.ak,0.5,B.ay,2],t.e)
-B.dl=new A.cK("dust_bunny","Dust Bunny",10,1.5,5,1,B.A8,0,1,B.c0,!1)
-B.E0=new A.i1(B.dl,8)
-B.xa=s([B.E0],t.x_)
-B.fm=new A.cK("dust_devil","Dust Devil",250,0.75,60,20,B.A7,2,1.5,B.xa,!0)
-B.e3=new A.cV(B.fm,2)
-B.wZ=s([B.cy,B.e3],t.U)
-B.x3=s([B.cz,B.e3],t.U)
-B.ti=new A.cV(B.fm,1)
-B.xb=s([B.cy,B.cz,B.ti],t.U)
-B.y_=s([B.cy,B.cz,B.e3],t.U)
-B.tj=new A.cV(B.nl,3)
-B.tk=new A.cV(B.fm,3)
-B.w8=s([B.hf,B.tj,B.tk],t.U)
-B.ii=s([B.yh,B.x4,B.xf,B.wM,B.wR,B.wZ,B.x3,B.xb,B.y_,B.w8],A.a2("o<B<cV>>"))
 B.vG=new A.iU(0,-1,0,"up")
 B.vF=new A.iU(0,1,2,"down")
 B.vH=new A.iU(-1,0,3,"left")
@@ -52855,7 +52816,7 @@ B.CF=new A.dI(0.75,0.75,0.065)
 B.CH=new A.dI(0.5,0.12,0.045)
 B.xE=s([B.CE,B.CG,B.CD,B.CI,B.CF,B.CH],A.a2("o<+(K,K,K)>"))
 B.uj=new A.fC(4,"other")
-B.xF=s([B.hy,B.hz,B.hA,B.hB,B.uj],A.a2("o<fC>"))
+B.xG=s([B.hy,B.hz,B.hA,B.hB,B.uj],A.a2("o<fC>"))
 B.bO=new A.tW(0,"intake")
 B.FY=new A.bC(0,"Strong suction",60,0,0,0,0.1)
 B.FK=new A.bC(0,"Cyclone",80,0,0,0,0.15)
@@ -52865,8 +52826,8 @@ B.FW=new A.bC(0,"Beater bar",60,0,1.875,0,0)
 B.FX=new A.bC(0,"Turbo brush",100,0,3.75,0,0)
 B.xo=s([B.FW,B.FX],t.r)
 B.Fx=new A.cP("Damage",B.xo)
-B.wX=s([B.FC,B.Fx],t.ad)
-B.tb=new A.el(0,0,null,B.bO,"vacuum","Vacuum","Sucks on a strip, slowing messes",4,1.875,0,50,B.be,B.y,0.45,B.wX)
+B.wZ=s([B.FC,B.Fx],t.ad)
+B.tb=new A.el(0,0,null,B.bO,"vacuum","Vacuum","Sucks on a strip, slowing messes",4,1.875,0,50,B.be,B.y,0.45,B.wZ)
 B.t_=new A.tW(1,"outflow")
 B.FR=new A.bC(0,"High setting",45,0,0,0,0.1)
 B.FP=new A.bC(0,"Turbo",70,0,0,0,0.15)
@@ -52880,8 +52841,8 @@ B.y0=s([B.Fw,B.Fz],t.ad)
 B.t9=new A.el(0,0,null,B.t_,"fan","Fan","Blows on a strip, slowing messes walking into it",3,0.9375,0,45,B.ay,B.y,0.7,B.y0)
 B.FT=new A.bC(0,"Wet mop",35,0,1.5,0,0)
 B.FM=new A.bC(0,"Steam mop",70,0,3,0,0)
-B.wU=s([B.FT,B.FM],t.r)
-B.FD=new A.cP("Soak",B.wU)
+B.wW=s([B.FT,B.FM],t.r)
+B.FD=new A.cP("Soak",B.wW)
 B.G2=new A.bC(0,"Long handle",30,0.5,0,0,0)
 B.FH=new A.bC(0,"Extendable",55,0.5,0,0,0)
 B.w4=s([B.G2,B.FH],t.r)
@@ -52906,17 +52867,17 @@ B.FU=new A.bC(0,"Brisk sweep",40,0,0,0.5,0)
 B.FN=new A.bC(0,"Whisk",80,0,0,0.5,0)
 B.wK=s([B.FU,B.FN],t.r)
 B.Ft=new A.cP("Speed",B.wK)
-B.xG=s([B.Fy,B.Ft],t.ad)
-B.t7=new A.el(0,0,null,B.bO,"broom","Broom","Heavy sweeps for large dry messes; poor on dust",1.5,4,1,60,B.ak,B.R,0,B.xG)
+B.xH=s([B.Fy,B.Ft],t.ad)
+B.t7=new A.el(0,0,null,B.bO,"broom","Broom","Heavy sweeps for large dry messes; poor on dust",1.5,4,1,60,B.ak,B.R,0,B.xH)
 B.FS=new A.bC(5,"Flyers",15,0,0,0,0)
 B.FJ=new A.bC(5,"Radio ads",45,0,0,0,0)
 B.FV=new A.bC(10,"TV campaign",135,0,0,0,0)
 B.xd=s([B.FS,B.FJ,B.FV],t.r)
 B.FB=new A.cP("Advertising",B.xd)
-B.xH=s([B.FB],t.ad)
-B.t8=new A.el(10,25,10,B.bO,"business","Cleaning Co.","Earns coins every wave; cleans nothing",0,0,0,50,B.aM,B.ad,0,B.xH)
+B.xI=s([B.FB],t.ad)
+B.t8=new A.el(10,25,10,B.bO,"business","Cleaning Co.","Earns coins every wave; cleans nothing",0,0,0,50,B.aM,B.ad,0,B.xI)
 B.cY=s([B.tb,B.t9,B.ta,B.t6,B.t7,B.t8],t.Fs)
-B.xJ=s(["click","scroll"],t.s)
+B.xK=s(["click","scroll"],t.s)
 B.xC=s(["......###.......","S====.........##","....=....=====..","....=.##.=...=..","....=.##.=...=..","....=....=...=..","....======...=..","##...........==G","##..........##.."],t.s)
 B.EL=new A.bn(0,1)
 B.EX=new A.bn(4,1)
@@ -52928,7 +52889,7 @@ B.ET=new A.bn(13,7)
 B.EW=new A.bn(15,7)
 B.y7=s([B.EL,B.EX,B.EY,B.F1,B.F0,B.ES,B.ET,B.EW],t.kg)
 B.r5=new A.fc("Dust Bunnies, crumbs and mountains of laundry.","living_room","Living Room",B.xC,B.y7)
-B.xZ=s(["######....######","##..............","..........=====S","G=====....=.....",".....=.##.=..##.",".....=.##.=..##.",".....======.....","................","###........####."],t.s)
+B.y_=s(["######....######","##..............","..........=====S","G=====....=.....",".....=.##.=..##.",".....=.##.=..##.",".....======.....","................","###........####."],t.s)
 B.EV=new A.bn(15,2)
 B.EO=new A.bn(10,2)
 B.EP=new A.bn(10,6)
@@ -52936,32 +52897,32 @@ B.F_=new A.bn(5,6)
 B.EZ=new A.bn(5,3)
 B.EM=new A.bn(0,3)
 B.x6=s([B.EV,B.EO,B.EP,B.F_,B.EZ,B.EM],t.kg)
-B.D4=new A.fc("Crumbs and spills everywhere, and mud on the way.","kitchen","Kitchen",B.xZ,B.x6)
-B.xX=s(["#####..##.......","#####..##..====G","#####......=....","...........=.##.","...........=.##.","...........=....","S===========....","....##........##","....##........##"],t.s)
+B.D4=new A.fc("Crumbs and spills everywhere, and mud on the way.","kitchen","Kitchen",B.y_,B.x6)
+B.xY=s(["#####..##.......","#####..##..====G","#####......=....","...........=.##.","...........=.##.","...........=....","S===========....","....##........##","....##........##"],t.s)
 B.EN=new A.bn(0,6)
 B.ER=new A.bn(11,6)
 B.EQ=new A.bn(11,1)
 B.EU=new A.bn(15,1)
-B.wV=s([B.EN,B.ER,B.EQ,B.EU],t.kg)
-B.D3=new A.fc("Puddles, stray Socks, and a short run to the door.","bathroom","Bathroom",B.xX,B.wV)
+B.wX=s([B.EN,B.ER,B.EQ,B.EU],t.kg)
+B.D3=new A.fc("Puddles, stray Socks, and a short run to the door.","bathroom","Bathroom",B.xY,B.wX)
 B.P=s([B.r5,B.D4,B.D3],A.a2("o<fc>"))
-B.xP=s([],t.sP)
-B.xN=s([],t.U)
-B.ik=s([],A.a2("o<adD>"))
-B.xU=s([],t.gw)
-B.il=s([],t.EP)
+B.xQ=s([],t.sP)
+B.xO=s([],t.U)
+B.ij=s([],A.a2("o<adD>"))
+B.xV=s([],t.gw)
+B.ik=s([],t.EP)
 B.f2=s([],t.B)
-B.im=s([],t.xm)
-B.xO=s([],t.E1)
+B.il=s([],t.xm)
+B.xP=s([],t.E1)
 B.d_=s([],t.I)
 B.cZ=s([],t.s)
 B.C=s([],t.ve)
-B.xT=s([],t.px)
-B.xM=s([],A.a2("o<mv>"))
-B.xS=s([],A.a2("o<mw>"))
-B.xR=s([],A.a2("o<my>"))
-B.xL=s([],t.p)
-B.ij=s([],t.t)
+B.xU=s([],t.px)
+B.xN=s([],A.a2("o<mv>"))
+B.xT=s([],A.a2("o<mw>"))
+B.xS=s([],A.a2("o<my>"))
+B.xM=s([],t.p)
+B.ii=s([],t.t)
 B.CQ=new A.t(0.05,0.4,1.1,0.98)
 B.CT=new A.t(0.2,0.15,0.7,0.6)
 B.CM=new A.t(0.5,0.05,0.95,0.55)
@@ -52981,7 +52942,46 @@ B.fo=new A.dx(5,"numLockModifier")
 B.fp=new A.dx(6,"scrollLockModifier")
 B.fq=new A.dx(7,"functionModifier")
 B.nn=new A.dx(8,"symbolModifier")
-B.io=s([B.br,B.bs,B.bt,B.bu,B.fn,B.fo,B.fp,B.fq,B.nn],A.a2("o<dx>"))
+B.im=s([B.br,B.bs,B.bt,B.bu,B.fn,B.fo,B.fp,B.fq,B.nn],A.a2("o<dx>"))
+B.A5=new A.bL([B.be,0.125,B.aM,0,B.bf,0.125,B.ak,1.5,B.ay,0.75],t.e)
+B.Ah=new A.bL([B.ak,0.5],t.e)
+B.c0=s([],t.x_)
+B.nm=new A.cK("socks","Socks",6,2,3,2,B.Ah,0,1,B.c0,!1)
+B.E1=new A.i1(B.nm,6)
+B.xa=s([B.E1],t.x_)
+B.dm=new A.cK("laundry_mountain","Laundry Mountain",250,0.5,50,20,B.A5,0,2,B.xa,!0)
+B.hg=new A.cV(B.dm,1)
+B.yh=s([B.hg],t.U)
+B.cy=new A.cV(B.dm,2)
+B.x4=s([B.cy],t.U)
+B.hf=new A.cV(B.dm,3)
+B.xf=s([B.hf],t.U)
+B.th=new A.cV(B.dm,4)
+B.wM=s([B.th],t.U)
+B.A6=new A.bL([B.bf,1.5,B.be,0.5,B.aM,0.25,B.ak,0,B.ay,0],t.e)
+B.A9=new A.bL([B.be,0.5,B.bf,2,B.ak,0.5,B.ay,0.5],t.e)
+B.dk=new A.cK("wet_spill","Wet Spill",20,0.75,12,3,B.A9,0,1.5,B.c0,!1)
+B.E2=new A.i1(B.dk,4)
+B.xs=s([B.E2],t.x_)
+B.nl=new A.cK("mud_monster","Mud Monster",400,0.5,60,20,B.A6,0,2,B.xs,!0)
+B.cz=new A.cV(B.nl,2)
+B.wT=s([B.hg,B.cz],t.U)
+B.A7=new A.bL([B.be,1.5,B.ay,2,B.ak,0.25,B.bf,0,B.aM,2],t.e)
+B.A8=new A.bL([B.ak,0.5,B.ay,2],t.e)
+B.dl=new A.cK("dust_bunny","Dust Bunny",10,1.5,5,1,B.A8,0,1,B.c0,!1)
+B.E0=new A.i1(B.dl,8)
+B.xb=s([B.E0],t.x_)
+B.fm=new A.cK("dust_devil","Dust Devil",250,0.75,60,20,B.A7,2,1.5,B.xb,!0)
+B.e3=new A.cV(B.fm,2)
+B.w8=s([B.cy,B.e3],t.U)
+B.wS=s([B.cz,B.e3],t.U)
+B.ti=new A.cV(B.fm,1)
+B.x7=s([B.cy,B.cz,B.ti],t.U)
+B.wN=s([B.cy,B.cz,B.e3],t.U)
+B.tk=new A.cV(B.nl,3)
+B.tj=new A.cV(B.fm,3)
+B.xF=s([B.hf,B.tk,B.tj],t.U)
+B.io=s([B.yh,B.x4,B.xf,B.wM,B.wT,B.w8,B.wS,B.x7,B.wN,B.xF],A.a2("o<B<cV>>"))
 B.ye=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.D0=new A.t(0.05,0.05,0.9500000000000001,0.33)
 B.CO=new A.t(0.15,0.3,0.85,0.54)
@@ -53509,7 +53509,7 @@ B.wl=s([4294968072,null,null,8589935161],t.Z)
 B.xx=s([8589934850,8589934850,8589934851,null],t.Z)
 B.nh=new A.bL(["*",B.wo,"+",B.wp,"-",B.wq,".",B.wr,"/",B.ws,"0",B.wt,"1",B.wu,"2",B.wv,"3",B.ww,"4",B.wx,"5",B.wy,"6",B.wz,"7",B.wA,"8",B.wB,"9",B.wD,"Alt",B.xu,"AltGraph",B.wd,"ArrowDown",B.we,"ArrowLeft",B.wf,"ArrowRight",B.wg,"ArrowUp",B.wh,"Clear",B.wm,"Control",B.xv,"Delete",B.wc,"End",B.wi,"Enter",B.wb,"Home",B.wj,"Insert",B.wn,"Meta",B.xw,"PageDown",B.wk,"PageUp",B.wl,"Shift",B.xx],A.a2("bL<r,B<l?>>"))
 B.wC=s([B.is,null,null,B.n9],t.L)
-B.xV=s([B.mW,null,null,B.na],t.L)
+B.xW=s([B.mW,null,null,B.na],t.L)
 B.xc=s([B.mX,null,null,B.nb],t.L)
 B.xB=s([B.mY,null,null,B.f9],t.L)
 B.w3=s([B.mZ,null,null,B.nc],t.L)
@@ -53520,27 +53520,27 @@ B.yc=s([B.n2,null,null,B.fd],t.L)
 B.y4=s([B.n3,null,null,B.fe],t.L)
 B.wH=s([B.n4,null,null,B.ff],t.L)
 B.w7=s([B.n5,null,null,B.fg],t.L)
-B.wY=s([B.n6,null,null,B.fh],t.L)
-B.xW=s([B.n7,null,null,B.fi],t.L)
-B.xY=s([B.n8,null,null,B.fj],t.L)
-B.wN=s([B.bn,B.bn,B.c5,null],t.L)
+B.x_=s([B.n6,null,null,B.fh],t.L)
+B.xX=s([B.n7,null,null,B.fi],t.L)
+B.xZ=s([B.n8,null,null,B.fj],t.L)
+B.wO=s([B.bn,B.bn,B.c5,null],t.L)
 B.ya=s([B.d4,null,B.d4,null],t.L)
 B.xi=s([B.d7,null,null,B.fc],t.L)
 B.xj=s([B.d8,null,null,B.fe],t.L)
 B.xk=s([B.d9,null,null,B.fg],t.L)
 B.yb=s([B.da,null,null,B.fi],t.L)
 B.y1=s([B.f5,null,null,B.ff],t.L)
-B.wO=s([B.bl,B.bl,B.c3,null],t.L)
-B.xI=s([B.f3,null,null,B.f9],t.L)
+B.wP=s([B.bl,B.bl,B.c3,null],t.L)
+B.xJ=s([B.f3,null,null,B.f9],t.L)
 B.xl=s([B.db,null,null,B.fb],t.L)
 B.wF=s([B.d3,null,null,B.f8],t.L)
 B.xm=s([B.dc,null,null,B.fh],t.L)
 B.y2=s([B.f6,null,null,B.fa],t.L)
-B.wP=s([B.bo,B.bo,B.c6,null],t.L)
+B.wQ=s([B.bo,B.bo,B.c6,null],t.L)
 B.xn=s([B.dd,null,null,B.fd],t.L)
-B.xK=s([B.de,null,null,B.fj],t.L)
-B.wQ=s([B.bm,B.bm,B.c4,null],t.L)
-B.Af=new A.bL(["*",B.wC,"+",B.xV,"-",B.xc,".",B.xB,"/",B.w3,"0",B.y9,"1",B.y5,"2",B.wJ,"3",B.yc,"4",B.y4,"5",B.wH,"6",B.w7,"7",B.wY,"8",B.xW,"9",B.xY,"Alt",B.wN,"AltGraph",B.ya,"ArrowDown",B.xi,"ArrowLeft",B.xj,"ArrowRight",B.xk,"ArrowUp",B.yb,"Clear",B.y1,"Control",B.wO,"Delete",B.xI,"End",B.xl,"Enter",B.wF,"Home",B.xm,"Insert",B.y2,"Meta",B.wP,"PageDown",B.xn,"PageUp",B.xK,"Shift",B.wQ],A.a2("bL<r,B<c?>>"))
+B.xL=s([B.de,null,null,B.fj],t.L)
+B.wR=s([B.bm,B.bm,B.c4,null],t.L)
+B.Af=new A.bL(["*",B.wC,"+",B.xW,"-",B.xc,".",B.xB,"/",B.w3,"0",B.y9,"1",B.y5,"2",B.wJ,"3",B.yc,"4",B.y4,"5",B.wH,"6",B.w7,"7",B.x_,"8",B.xX,"9",B.xZ,"Alt",B.wO,"AltGraph",B.ya,"ArrowDown",B.xi,"ArrowLeft",B.xj,"ArrowRight",B.xk,"ArrowUp",B.yb,"Clear",B.y1,"Control",B.wP,"Delete",B.xJ,"End",B.xl,"Enter",B.wF,"Home",B.xm,"Insert",B.y2,"Meta",B.wQ,"PageDown",B.xn,"PageUp",B.xL,"Shift",B.wR],A.a2("bL<r,B<c?>>"))
 B.AA={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.ni=new A.aG(B.AA,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.hD)
 B.Az={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
@@ -54236,23 +54236,23 @@ B.bK=new A.mx(0,"waitingForStart")
 B.aV=new A.mx(1,"spawning")
 B.aW=new A.mx(2,"clearing")
 B.dR=new A.mx(3,"allComplete")
-B.Gz=new A.ck(B.dl,0.3,1,26,8,24)
-B.Gx=new A.ck(B.nm,0.2,2,15,4,24)
-B.GE=new A.ck(B.dk,0.25,3,40,15,8)
-B.Ag=new A.bL([B.ak,1.5],t.e)
-B.fl=new A.cK("lego_brick","LEGO Brick",16,1,10,2,B.Ag,1,2,B.c0,!1)
-B.Gt=new A.ck(B.fl,0.1,4,40,15,8)
 B.zY=new A.bL([B.aM,2,B.ay,2],t.e)
 B.fk=new A.cK("crumb_swarm","Crumb Swarm",4,2.5,2,1,B.zY,0,1,B.c0,!1)
-B.GC=new A.ck(B.fk,0.15,4,1,1,48)
-B.xy=s([B.Gz,B.Gx,B.GE,B.Gt,B.GC],t.xx)
-B.GG=new A.qL("bathroom",B.xy,100,18,0.008,1.8,0.0001)
 B.Gw=new A.ck(B.fk,0.35,1,3,1,48)
 B.GA=new A.ck(B.dl,0.2,1,30,8,24)
 B.Gu=new A.ck(B.dk,0.3,2,45,15,8)
+B.Ag=new A.bL([B.ak,1.5],t.e)
+B.fl=new A.cK("lego_brick","LEGO Brick",16,1,10,2,B.Ag,1,2,B.c0,!1)
 B.GD=new A.ck(B.fl,0.15,4,40,15,8)
 B.wL=s([B.Gw,B.GA,B.Gu,B.GD],t.xx)
-B.GH=new A.qL("kitchen",B.wL,80,20,0.014,1.8,0.0004)
+B.GG=new A.qL("kitchen",B.wL,80,20,0.013,1.8,0.0003)
+B.Gz=new A.ck(B.dl,0.3,1,26,8,24)
+B.Gx=new A.ck(B.nm,0.2,2,15,4,24)
+B.GE=new A.ck(B.dk,0.25,3,40,15,8)
+B.Gt=new A.ck(B.fl,0.1,4,40,15,8)
+B.GC=new A.ck(B.fk,0.15,4,1,1,48)
+B.xy=s([B.Gz,B.Gx,B.GE,B.Gt,B.GC],t.xx)
+B.GH=new A.qL("bathroom",B.xy,100,18,0.0065,1.8,0.00002)
 B.GF=new A.ck(B.dl,0.35,1,45,10,24)
 B.Gv=new A.ck(B.fk,0.2,2,4,1,30)
 B.GB=new A.ck(B.dk,0.2,3,60,20,8)
@@ -54546,8 +54546,8 @@ r($,"aga","ak",()=>$.a3b())
 r($,"afN","Wf",()=>{A.a96()
 return B.tI})
 s($,"aen","a3x",()=>A.XF(B.GI))
-s($,"aem","a3w",()=>A.XF(B.GH))
-s($,"aek","a3u",()=>A.XF(B.GG))
+s($,"aem","a3w",()=>A.XF(B.GG))
+s($,"aek","a3u",()=>A.XF(B.GH))
 s($,"ael","a3v",()=>{var q=t.z
 return A.Ww(A.ap(["living_room",$.a3x(),"kitchen",$.a3w(),"bathroom",$.a3u()],q,q),t.N,A.a2("B<mv>"))})
 s($,"adw","DM",()=>A.ap(["vacuum",B.aI,"fan",B.tG,"mop",B.tP,"duster",B.tA,"broom",B.tw,"business",B.tx],t.N,A.a2("eS")))
