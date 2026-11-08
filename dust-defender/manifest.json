@@ -3,10 +3,10 @@
     "short_name": "Dust Defender",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
+    "background_color": "#101820",
+    "theme_color": "#101820",
     "description": "A tower defense game where household appliances fight off invading messes.",
-    "orientation": "portrait-primary",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
